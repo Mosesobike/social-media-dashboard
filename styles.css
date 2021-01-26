@@ -3,6 +3,25 @@
     margin: auto 0;
     box-sizing: border-box;
 }
+body{
+    background:hsl(230, 17%, 14%)
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+.section1-container{
+    color: white;
+    display: flex;
+}
+
+
+
+
+
+
+
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
