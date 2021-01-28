@@ -9,7 +9,8 @@ body{
     background:hsl(230, 17%, 14%);
     font-family: 'Inter', sans-serif;
 }
-.top-section{
+/* style for the title section */
+.title-section{
     display: flex;
      justify-content:space-between; 
     background:hsl(232, 19%, 15%);
@@ -22,20 +23,15 @@ body{
     font-weight: 700;
     color:white;
 }
-.total-followers{
+.purple-text{
     font-weight:400;
     font-size: 15px;
     color:hsl(228, 34%, 66%);
 }
+/* style for the toggle switch */
 .toggle{
     margin-right:11%;
 }
-.checkbox{
-     /* opacity: 0; */
-    /* position:absolute; */
-    /* overflow: hidden; */
-}
-
 .checkbox:checked ~ label .ball{
     transform: translateX(24px);
 }
@@ -55,8 +51,8 @@ label{
     border-radius: 50%;
     transform: translate(0px);
     transition: ease-in 0,2s linear;
-    /* position:absolute; */
 }
+/* first section styling */
 .section1-container{
     position: relative;
     color: white;
@@ -72,28 +68,43 @@ label{
     width:20%;
     text-align: center;
 }
- .section2-container{
+/* overview section */
+ .overview-container{
     color: white;
     display: flex;
-    margin-left:10%;
-    margin-right:6%;
+    margin-left:11%;
+    margin-right:8%;
     display: grid;
     grid-template-columns: auto auto auto auto;
-
  }
-.sub-section2{
+.sub-section-overview{
     display: flex;
-    justify-content:space-between;
+    justify-content:space-around;
     background: hsl(228, 28%, 20%);
-    margin: 4% 0%;
-    padding:8% 8%;
-    width:75%;
+    margin-top:4%;
+    padding:8% 0;
+    width:90%;
+}
+.inner-sub-section img{
+    /* justify-content: space-around; */
+    position: absoulte;
+}
+.inner-sub-section{
+    float: right;
+}
+.number{
+    font-size:23px;
+    font-weight:700;
+}
+small{
+    margin-left:5px;
+    font-size:12px;
 }
 
 
 
 
-
+/* footer styling */
 .attribution { 
     font-size: 11px; 
     text-align: center; 
