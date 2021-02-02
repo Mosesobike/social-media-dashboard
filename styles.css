@@ -11,7 +11,7 @@ body{
 }
 /* style for the title section */
 .title-section{
-    display: flex;
+     display: flex;
      justify-content:space-between; 
     background:hsl(232, 19%, 15%);
     color: white;
@@ -22,53 +22,54 @@ body{
     margin-left:11%;
     font-weight: 700;
     color:white;
+    font-size:10px;
 }
 .purple-text{
     font-weight:400;
-    font-size: 15px;
+    font-size:12px;
     color:hsl(228, 34%, 66%);
 }
 /* style for the toggle switch */
-  input[type="checkbox"] {
+input[type="checkbox"] {
     width: 0;
     height: 0;
     visibility: hidden;
   }
   .toggle-container {
     display: flex;
-    margin-right:11%;
   }
   label {
-    cursor: pointer !important;
-    width: 3.5rem;
-    height: 1.7rem;
+    cursor: pointer;
+    width: 5.3rem;
+    height: 2.7rem;
     background:linear-gradient(90deg, #378fe6 0%, #3eda82 100%);
     border-radius: 100px;
     position: relative;
     align-self: center;
+    margin-right:120px;
   }
   
   label:after {
     position: absolute;
     content: "";
-    top: 3px;
-    right: 3px;
+    top: 10px;
+    right:60px;
     width: 20px;
     height: 20px;
-    background:hsl(228, 34%, 66%);
+    background:hsl(231, 19%, 15%);
     border-radius: 90px;
     transition: 0.3s;
   }
   input:checked + label {
-    background:white;
+    background:linear-gradient(90deg, #378fe6 0%, #3eda82 100%);
   }
   input:checked + label:after {
     right: calc(100% - 45px);
-    transform: translateX(-100%);
-    background:lightgray;
+    transform: translateX(160%);
+    background: #ffffff;;
   }
-/* first section styling */
-.section1-container{
+/* .total-followers section styling */
+.total-followers-container{
     position: relative;
     color: white;
     display: flex;
@@ -76,19 +77,72 @@ body{
     margin-left:10%;
 }
 
-.sub-section1{
+.total-followers-card{
     background: hsl(228, 28%, 20%);
     margin: 5% 1%;
-    padding: 3% 1%;
-    width:20%;
+    padding: 3% 2%;
+    width:20.5%;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.total-followers-card:hover{
+    opacity:0.5;
+}
+.username{
+    margin-bottom:5%;
     text-align: center;
 }
+.username span{
+    font-size: 12px;
+    margin-left:8px;
+    margin-bottom:5%;
+}
+.username img{
+    width:13px;
+}
+.total-followers-heading{
+    font-size:35px;
+    letter-spacing: 2px;
+}
+.followers-text{
+    margin-top:4px;
+    margin-bottom:3px;
+    color: hsl(228, 34%, 66%);
+    letter-spacing: 5px;
+    font-size: 13px;
+}
+.today{
+    font-size:10px;
+}
+/* styling for the top borders */
+.facebook-card{
+    border-top: 5px hsl(208, 92%, 53%) solid;
+}
+.twitter-card{
+    border-top: 5px solid hsl(203, 89%, 53%);
+}
+.instagram-card{
+    border-top: 5px solid;
+    border-image-source: linear-gradient(90deg, #fdc468 0%, #df4996 100%);
+    border-image-slice: 30%;
+}
+.youtube-card{
+    border-top:solid 5px hsl(348, 97%, 39%);
+}
 /* overview section */
+.overview-title{
+    font-size: 15px;
+    margin-left:11%;
+    font-weight: 700;
+    color:white;
+}
  .overview-container{
     color: white;
     display: flex;
     margin-left:11%;
     margin-right:8%;
+    margin-bottom:2%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
  }
@@ -99,9 +153,9 @@ body{
     margin-top:4%;
     padding:8% 0;
     width:90%;
+    border-radius: 7px;
 }
 .inner-sub-section img{
-    /* justify-content: space-around; */
     position: absoulte;
 }
 .inner-sub-section{
@@ -115,9 +169,6 @@ small{
     margin-left:5px;
     font-size:12px;
 }
-
-
---instagram: linear-gradient(90deg, #fdc468 0%, #df4996 100%);
 
 
 /* footer styling */
